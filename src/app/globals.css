@@ -1,22 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #faf4ed;
+  --foreground: #575279;
+  --surface: #fffaf3;
+  --overlay: #f2e9e1;
+  --muted: #9893a5;
+  --subtle: #797593;
+  --love: #b4637a;
+  --gold: #ea9d34;
+  --rose: #d7827e;
+  --pine: #286983;
+  --foam: #56949f;
+  --iris: #907aa9;
+  --highlight-low: #f4ede8;
+  --highlight-med: #dfdad9;
+  --highlight-high: #cecacd;
+  --logo-border: #000000;
+}
+
+.dark {
+  --background: #191724;
+  --foreground: #e0def4;
+  --surface: #1f1d2e;
+  --overlay: #26233a;
+  --muted: #6e6a86;
+  --subtle: #908caa;
+  --love: #eb6f92;
+  --gold: #f6c177;
+  --rose: #ebbcba;
+  --pine: #31748f;
+  --foam: #9ccfd8;
+  --iris: #c4a7e7;
+  --highlight-low: #21202e;
+  --highlight-med: #403d52;
+  --highlight-high: #524f67;
+  --logo-border: #ffffff;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-rp-base: var(--background);
+  --color-rp-surface: var(--surface);
+  --color-rp-overlay: var(--overlay);
+  --color-rp-muted: var(--muted);
+  --color-rp-subtle: var(--subtle);
+  --color-rp-text: var(--foreground);
+  --color-rp-love: var(--love);
+  --color-rp-gold: var(--gold);
+  --color-rp-rose: var(--rose);
+  --color-rp-pine: var(--pine);
+  --color-rp-foam: var(--foam);
+  --color-rp-iris: var(--iris);
+  --color-rp-hl-low: var(--highlight-low);
+  --color-rp-hl-med: var(--highlight-med);
+  --color-rp-hl-high: var(--highlight-high);
+  --color-logo-border: var(--logo-border);
 }
 
 body {
