@@ -68,7 +68,7 @@ $wshShell = New-Object -ComObject WScript.Shell
 $shortcut = $wshShell.CreateShortcut($shortcutPath)
 $shortcut.TargetPath = $targetExe
 $shortcut.WorkingDirectory = $ScriptDir
-$shortcut.IconLocation = "$ScriptDir\app.ico"
+$shortcut.IconLocation = "$targetExe,0"
 $shortcut.Description = "AI Model Directory (TokenRate)"
 $shortcut.Save()
 

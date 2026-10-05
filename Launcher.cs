@@ -12,7 +12,7 @@ namespace TokenRateApp
     {
         private static NotifyIcon trayIcon;
         private static Process serverProcess;
-        private static string appDir = @"C:\Users\kyleh\Desktop\tokenrate-app";
+        private static string appDir = AppDomain.CurrentDomain.BaseDirectory.TrimEnd('\\');
         private static string appUrl = "http://localhost:3000";
         private static Mutex singleInstanceMutex;
 
